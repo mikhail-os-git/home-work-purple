@@ -44,7 +44,6 @@ header {
 .header__left {
 	display: flex;
 	align-items: center;
-	justify-content: center;
 }
 
 .logo {
@@ -63,6 +62,7 @@ header {
 	padding: 10px 16px;
 	box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.15);
 	background: #4b5563;
+	margin-right: 11px;
 }
 
 .list-header {
@@ -87,22 +87,23 @@ header {
 }
 
 /* main */
-.main__content {
+
+.dev {
+	margin-bottom: 69px;
+}
+.container-main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
 }
-.main__info {
-	text-align: center;
+.dev__info {
 	font-weight: 400;
 	font-size: 14px;
 	color: #fff;
 	opacity: 0.6;
 	margin-bottom: 14px;
 }
-
-.main__title {
+.dev__title {
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 158%;
@@ -110,23 +111,19 @@ header {
 	color: #fff;
 	margin-bottom: 30px;
 }
-.developer {
-	display: flex;
-	flex-direction: column;
-	padding: 0 0 0 66px;
-	background: url('./../img/devlop/dev-img.png') center left;
-	background-repeat: no-repeat;
-	background-size: contain;
+.dev__person {
 	margin-bottom: 28px;
+	padding: 0 0 0 66px;
+	background: url('./../img/devlop/dev-img.png') left center no-repeat;
 }
 
-.developer__name {
+.dev__name {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 175%;
 	color: #fff;
 }
-.developer__profession {
+.dev__profession {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 200%;
@@ -135,32 +132,38 @@ header {
 }
 .main__site-img {
 	border-radius: 5px;
-	margin-bottom: 69px;
-}
-.main__text-1 {
-	max-width: 708px;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 160%;
-	color: #fff;
-	margin-bottom: 47px;
-}
-.main__text-2 {
-	max-width: 708px;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 187%;
-	color: #fff;
-	margin-bottom: 103px;
 }
 
+.description {
+	margin-bottom: 100px;
+}
+
+.text-block {
+	max-width: 708px;
+}
+
+.text-block *:not(:last-child) {
+	margin-bottom: 46px;
+}
+
+.text-block__text {
+	font-weight: 400;
+	color: #fff;
+}
+.text-2 {
+	font-size: 16px;
+	line-height: 187%;
+}
+
+.text-1 {
+	font-size: 20px;
+	line-height: 160%;
+}
 /* Footer */
 .footer {
 	margin-bottom: 77px;
 }
-.footer__copyright {
-	text-align: center;
-}
+
 .copyright {
 	font-family: var(--font-family);
 	font-weight: 400;

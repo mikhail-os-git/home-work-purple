@@ -38,9 +38,12 @@ body {
 	text-align: center;
 	color: #333;
 }
-.registration__account {
-	display: flex;
-	column-gap: 6px;
+.registration__account > * {
+	display: inline-block;
+}
+
+.registration__account > *:not(:last-child) {
+	margin-right: 6px;
 }
 
 .registration__account:not(:last-child) {
