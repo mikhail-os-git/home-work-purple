@@ -33,7 +33,7 @@ body {
 
 /* Header */
 header {
-	margin: 72px 0;
+	margin: 72px 0 103px;
 }
 .header__wrapper {
 	display: flex;
@@ -122,11 +122,14 @@ header {
 	margin-bottom: 30px;
 }
 .dev__person {
-	margin-bottom: 28px;
-	padding: 0 0 0 66px;
-	background: url('./../img/devlop/dev-img.png') left center no-repeat;
+	margin-bottom: 31px;
+	display: flex;
+	column-gap: 16px;
+	/* background: url('./../img/devlop/dev-img.png') left center no-repeat; */
 }
-
+.dev__img {
+	object-fit: contain;
+}
 .dev__name {
 	font-weight: 400;
 	font-size: 16px;

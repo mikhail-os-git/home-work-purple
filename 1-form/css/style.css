@@ -69,6 +69,8 @@ body {
 	row-gap: 22px;
 }
 .form__wrap {
+	display: flex;
+	column-gap: 1px;
 }
 
 #person {
