@@ -1,34 +1,82 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 
 :root {
-	--width-content: calc(1392px + 30px);
+	--width-content: calc(1392px + 48px);
 	--color-text-black: #000;
 	--color-text-white: #fff;
 	--color-blue: #357efe;
 	--color-description: rgba(78, 93, 124, 0.5);
-	--color-description-grey: rgba(255, 255, 255, 0.6);
+	--color-description-bg-blue: rgba(255, 255, 255, 0.8);
+	--color-footer: #1a1d25;
+
 	--font-family: 'Inter', sans-serif;
+
+	/* --border-bottom: 1px solid rgba(255, 255, 255, 0.16); */
 	/* --shadow: ; */
 }
 
 body {
 	font-family: var(--font-family);
+
+	overflow-y: scroll;
+}
+.section {
+	/* padding: 80px 0; */
 }
 
-.section {
+.section_blue {
+	background-color: var(--color-blue);
 }
+
+.section-wrapper {
+	display: flex;
+	gap: 0 65px;
+}
+
+.section-wrapper_reverse {
+	gap: unset;
+	flex-direction: row-reverse;
+}
+
+.section-content {
+	display: flex;
+	flex-direction: column;
+	padding: 0 118px 0 0;
+}
+
+.content-center {
+	justify-content: center;
+}
+
+.section-content_reverse {
+	padding: 0 0 0 118px;
+}
+
 .container {
 	max-width: var(--width-content);
-	padding: 0 15px;
+	padding: 80px 24px;
 	margin: 0 auto;
+}
+
+.container_right {
+	padding: 80px 24px 0 118px;
+}
+
+.container_120 {
+	padding: 120px 24px;
+	text-align: center;
 }
 
 .site-title {
 	font-weight: 600;
 	font-size: 48px;
 	line-height: 120%;
-	text-align: center;
 	color: var(--color-text-black);
+	margin-bottom: 24px;
+}
+
+.site-title_white {
+	color: var(--color-text-white) !important;
 }
 
 .site-description {
@@ -37,18 +85,19 @@ body {
 	line-height: 140%;
 	color: var(--color-description);
 }
-.site-description_center {
-	text-align: center;
+
+.mb_40 {
+	margin-bottom: 40px;
 }
 
-.site-description_second-color {
-	color: var(--color-description-grey);
+.site-description_white {
+	color: var(--color-description-bg-blue);
 }
-.white-color {
+/* .white-color {
 	color: var(--color-text-white) !important;
-}
+} */
 
-.site-btn {
+.site-button {
 	border-radius: 47px;
 	padding: 12px 0;
 	font-weight: 800;
@@ -58,20 +107,47 @@ body {
 	color: var(--color-text-white);
 	background: var(--color-blue);
 	display: block;
-	margin-top: 24px !important;
 }
-.site-btn_white {
+.site-button_white {
 	color: var(--color-blue);
 	background: var(--color-text-white);
 }
 
-@media (max-width: 430px) {
-	.site-title {
-		font-size: 36px;
-		text-align: unset;
+@media (max-width: 1400px) {
+	.container {
+		padding: 48px 24px;
 	}
 
-	.site-description {
-		text-align: unset;
+	.container_120 {
+		padding: 64px 24px;
+	}
+	.section-content_reverse {
+		padding-left: 70px;
+	}
+	.section-content {
+		padding-right: 70px;
+	}
+	.site-title {
+		font-size: 32px;
+	}
+}
+
+/* @media (max-width: 1000px) {
+} */
+
+@media (max-width: 1300px) {
+	.section-wrapper {
+		flex-direction: column;
+	}
+	.section-content {
+		padding: 0;
+		align-items: center;
+	}
+
+	.site-image {
+		margin-bottom: 32px;
+	}
+	.mb_40 {
+		margin-bottom: 32px;
 	}
 }

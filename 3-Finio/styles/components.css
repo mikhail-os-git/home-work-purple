@@ -1,4 +1,10 @@
-.hero {
+.section-top {
+	text-align: center;
+}
+
+.button_inline-block {
+	display: inline-block;
+	padding: 12px 32px;
 }
 
 .tarif__title {
@@ -11,22 +17,50 @@
 
 .card__wrapper {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(369px, 1fr));
-	gap: 24px;
+	grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
 	justify-content: center !important;
-	padding: 0px 118px;
 }
+
+.card_wrapper_security {
+	gap: 78px;
+}
+
+.card__wrapper_tarif {
+	gap: 24px;
+	/* padding: 0px 118px; */
+}
+
 .card {
+	display: flex;
+	flex-direction: column;
+}
+
+.card_security {
+	gap: 24px;
+}
+
+.card_tarif {
 	border-radius: 8px;
 	box-shadow: 0 0 32px 0 rgba(78, 93, 124, 0.16);
 	padding: 93px 40px 48px;
 }
 
-.card > p {
+.security__title {
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 120%;
+	color: var(--color-text-black);
+}
+
+.img__security {
+	height: 80px;
+	width: 80px;
+}
+.card_tarif > .site-description {
 	margin-bottom: calc(50px - 16px);
 }
 
-.card_blue > p {
+.card_tarif > .site-description_white {
 	margin-bottom: calc(32px - 16px);
 }
 
@@ -34,11 +68,11 @@
 	padding: 48px 40px;
 }
 .card__percent {
-	display: inline-block;
+	/* display: inline-block; */
+	max-width: 128px;
 	background: #1abc9c;
 	border-radius: 8px;
 	font-weight: 500;
-
 	padding: 4px 16px;
 	font-size: 15px;
 	line-height: 140%;
@@ -67,10 +101,6 @@
 	position: relative;
 }
 
-/* .card__item-wrap:last-child {
-	margin-bottom: 24px !important;
-} */
-
 .card__item-wrap > p {
 	font-weight: 500;
 	font-size: 17px;
@@ -84,9 +114,6 @@
 }
 
 .card__cost_strong-yelow {
-	/* position: absolute;
-	top: 8px;
-	right: 19px; */
 	border-radius: 8px;
 	font-weight: 700 !important;
 	color: var(--color-text-white) !important;
@@ -99,15 +126,33 @@
 	background: var(--color-blue);
 }
 
-@media (max-width: 430px) {
+@media (max-width: 1400px) {
 	.card__wrapper {
-		padding: 0;
+		gap: 32px;
+	}
+}
+@media (max-width: 1300px) {
+	.card__wrapper {
 		grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
+	}
+
+	.security__title {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 430px) {
+	.card__wrapper-tarif {
+		/* grid-template-columns: repeat(2, minmax(328px, 1fr)); */
+		padding: 0;
 	}
 }
 
 @media (max-width: 650px) {
-	.card {
+	.section-top {
+		text-align: start;
+	}
+	.card_tarif {
 		padding: 48px 24px;
 	}
 }

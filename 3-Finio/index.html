@@ -1,25 +1,297 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="styles/style.css" />
-		<title>FINIO</title>
+		<link rel="stylesheet" href="styles/main.css" />
+		<title>Finio</title>
 	</head>
 	<body>
-		<main class="hero">
+		<header class="header">
+				<div class="header__wrapper">
+					<a href="" class="header__logo">
+						<img src="images/header/finio.svg" alt="Логотип" />
+					</a>
+
+					<nav>
+						<ul class="header-menu">
+							<li class="header-menu__item">
+								<a href="#" class="header-menu__link">Возможности</a>
+							</li>
+							<li class="header-menu__item">
+								<a href="#" class="header-menu__link">Тарифы</a>
+							</li>
+							<li class="header-menu__item">
+								<a href="#" class="header-menu__link">Отзывы</a>
+							</li>
+							<li class="header-menu__item">
+								<a href="#" class="header-menu__link">Поддержка клиентов</a>
+							</li>
+						</ul>
+					</nav>
+
+					<a href="#" class="header__btn site-button site-button_white">
+						Личный кабинет
+					</a>
+					<a href="#" class="mobile-menu">
+						<img src="images/header/menu.svg" alt="мобильное меню" />
+					</a>
+				</div>
+		</header>
+		<main class="main">
+			<section class="hero__section section section_gradient">
+				<div class="container container_hero">
+					<div class="hero__wrapper">
+						<article class="hero__section-content">
+							<h1 class="main-title">
+								Простой финансовый учёт для продавцов на маркетплейсах
+							</h1>
+							<a href="#" class="hero__button site-button site-button_white button_inline-block">
+								Попробовать 14 дней бесплатно
+							</a>
+							<br>
+							<div class="hero__links">
+								<div>
+									<a href="#" class="hero__link">
+									<img src="images/hero/links/wb.svg" alt="Wildberries" />
+								</a>
+								<a href="#" class="hero__link">
+									<img src="images/hero/links/oz.svg" alt="Ozon" />
+								</a>
+								</div>
+								
+								<div>
+								<a href="#" class="hero__link">
+									<img src="images/hero/links/ym.svg" alt="Yandex market" />
+								</a>
+								<a href="#" class="hero__link">
+									<img src="images/hero/links/ae.svg" alt="AliExpress" />
+								</a>
+								<!-- <img src="images/hero/links/sites.svg" alt="Список сайтов" /> -->
+							</div>
+						</article>
+						<img
+							src="images/hero/img.png"
+							alt="Пример на компьютере сайта Finio"
+							class="hero__img"
+						/>
+					</div>
+					<article class="hero__tags">
+						<div class="hero__tag">
+							<img src="images/hero/tags/graph.svg" alt="Картинка 'Анализ'" />
+							<p>Анализ прибыли по товарам и брендам</p>
+						</div>
+						<div class="hero__tag">
+							<img
+								src="images/hero/tags/analysis.svg"
+								alt="Картинка 'Автоматический учёт'"
+							/>
+							<p>Автоматический учёт доходов Wildberries</p>
+						</div>
+						<div class="hero__tag">
+							<img
+								src="images/hero/tags/currency.svg"
+								alt="Картинка 'Валюта'"
+							/>
+							<p>От 990 рублей в месяц с полным функционалом</p>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="container ">
+					<div class=" section-wrapper section-wrapper_reverse">
+						<img class="site-image" src="images/balance/balance-img.png" alt="картинка учет баланса">
+
+						<article class="section-content section-content_reverse content-center">
+							<h2 class="site-title">Предотвращайте кассовые разрывы	</h2>
+							<p class="site-description">Заранее планируйте предстоящие платежи и поступления средств. Тем самым, вы избежите неприятной ситуации с нехваткой средств на счетах	</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
 			<section class="section">
 				<div class="container">
-					<h2 class="tarif__title site-title">Тарифы</h2>
-					<p
-						class="tarif__description site-description site-description_center"
-					>
-						Все тарифы имеют полный функционал и отличаются только количеством
-						месяцев и выгодой
-					</p>
+					<div class="report__section-wrapper section-wrapper">
+						<img class="site-image" src="images/report/report.png" alt="картинка обработки отчетов">
+						<article class="section-content content-center">
+							<h2 class="site-title">Отчёты о прибыли и убытках всегда под рукой	</h2>
+							<p class="site-description">Получите полную информацию о состоянии вашего бизнеса, включающую все необходимые показатели для принятия правильных решений</p>	
+					</div>
+				</div>
+			</section>
 
-					<div class="card__wrapper">
-						<article class="card">
+			<section class="section">
+				<div class="container ">
+					<div class=" section-wrapper section-wrapper_reverse">
+						<img class="site-image" src="images/income/income.png" alt="картинка статистики прибыли">
+
+						<article class="section-content section-content_reverse">
+							<h2 class="site-title">Какие товары приносят прибыль	</h2>
+							<p class="site-description">Находите точки роста, делайте упор на рентабельные товары и увеличивайте свой доход</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="container">
+					<div class="section-wrapper">
+						<img class="site-image expense__img" src="images/expense/expense.png" alt="картинка обработки отчетов">
+						<article class="section-content content-center">
+							<h2 class="site-title">Сокращайте лишние расходы</h2>
+							<p class="site-description">Анализируйте расходы, убирать ненужные издержки и находите возможности повышать прибыльность бизнеса</p>	
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_blue ">
+				<div class="container container_120">
+					<h2 class="site-title site-title_white">
+						Экономьте время и нервы на учете
+					</h2>
+					<p class="site-description site-description_white">Автоматическая синхронизация данных с маркетплейсов позволит вам мгновенно получать все важный показатели бизнеса на одном экране. А с помощью мобильной версии вы сможете вносить расходы всего пару кликов</p>
+					<a href="#" class="site-button site-button_white button_inline-block exaple_btn">
+								Попробовать 14 дней бесплатно
+					</a>
+
+					<img src="images/example/ex.png" alt="Отчет превью" class="example__img">
+
+					<div class="example__wrapper">
+						<div>
+						<h3 class="example-list__title">Excel</h3>
+						<ul class="example-list">
+							<li class="example-list__item">
+								<img src="images/example/icons/exclamation-circle.svg" alt="восклицательный знак">
+								<p class="site-description site-description_white">Долгое внесение данных</p>
+							</li>
+							<li class="example-list__item">
+								<img src="images/example/icons/exclamation-circle.svg" alt="восклицательный знак">
+								<p class="site-description site-description_white">Ручной ввод данных с маркетплейсов</p>
+							</li>
+							<li class="example-list__item">
+								<img src="images/example/icons/exclamation-circle.svg" alt="восклицательный знак">
+								<p class="site-description site-description_white">Не удобная работа с телефона</p>
+							</li>
+							<li class="example-list__item">
+								<img src="images/example/icons/exclamation-circle.svg" alt="восклицательный знак">
+								<p class="site-description site-description_white">Сложность восприятия итоговых данных</p>
+							</li>
+						</ul>
+						</div>
+						<div>
+							<h3 class="example-list__title">FINIO</h3>
+							<ul class="example-list">
+								<li class="example-list__item">
+									<img src="images/example/icons/check-circle.svg" alt="знак галочка">
+									<p class="site-description site-description_white">Внесение данных за пару кликов</p>
+								</li>
+								<li class="example-list__item">
+									<img src="images/example/icons/check-circle.svg" alt="знак галочка">
+									<p class="site-description site-description_white">Автоматическое получение данных по API</p>
+								</li>
+								<li class="example-list__item">
+								<img src="images/example/icons/check-circle.svg" alt="знак галочка">
+									<p class="site-description site-description_white">Удобная мобильная версия</p>
+								</li>
+								<li class="example-list__item">
+								<img src="images/example/icons/check-circle.svg" alt="знак галочка">
+									<p class="site-description site-description_white">Наглядные отчеты, графики и таблицы</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="container">
+					<div class="card__wrapper card_wrapper_security">
+						<div class="card card_security">
+							<img src="images/security/servers.svg" alt="картинка сервер" class="img__security">
+
+							<h3 class="security__title">Надёжные сервера на территории России</h3>
+							<p class="site-description">Никакие события не скажутся на бесперебойной работе сервиса. </p>
+						</div>
+
+						<div class="card card_security">
+							<img src="images/security/ssl.svg" alt="картинка сервер" class="img__security">
+
+							<h3 class="security__title">Используем 256-битное SSL-шифрование</h3>
+							<p class="site-description">Ваши данные не могут быть перехвачены, даже при использовании открытых Wi-Fi сетей</p>
+						</div>
+							<div class="card card_security">
+							<img src="images/security/security.svg" alt="картинка сервер" class="img__security">
+
+							<h3 class="security__title">Не передаём ваши данные 3-им лицам</h3>
+							<p class="site-description">Все данные о доходах и расходах компании видны только вам и тем, кому вы открыли доступ</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="container container_mobile">
+					<h2 class="site-title ">Мобильная версия</h2>
+					<p class="site-description mb_40">Пользоваться всем функционалом сервиса удобно в любом месте и с любых устройств</p>
+					<div class="mobile__wrapper">
+
+						<img src="images/mobile/mobile.png" alt="" class="mobile__img">
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="container container__support section_blue border">
+					<div class="support__section-wrapper section-wrapper section-wrapper_reverse section_blue border">
+						<div class="support__section-content section-content">
+							<h2 class="site-title site-title_white">
+								Поддержка клиентов	
+							</h2>
+							<p class="site-description site-description_white mb_40">Мы всегда готовы ответить на любые вопросы в онлайн чате или по телефону.</p>
+							<ul class="support__content-wrapper mb_40">
+								<li class="support__item">
+									<img src="images/support/icons/tg.svg" alt="иконка Telegram" class="support__item-icon">
+									<a href="#" class="support__item-text">Telegram Finio</a>
+
+								</li>
+								<li class="support__item">
+									<img src="images/support/icons/wa.svg" alt="иконка WhatsApp" class="support__item-icon">
+									<a href="#" class="support__item-text">WhatsApp Finio</a>
+									
+								</li>
+								<li class="support__item">
+									<img src="images/support/icons/email.svg" alt="иконка email" class="support__item-icon">
+									<a href="mailto:hello@finio.ru" class="support__item-text">hello@finio.ru</a>
+								</li>
+								
+							</ul>
+
+							<p class="site-description site-description_white">Кроме того, мы готовы помочь вам с переносом данных из других сервисов или Excel.</p>
+
+						</div>
+						<img src="images/support/support.png" alt="Поддержка" class="support__img">
+					</div>
+				</div>
+				</section>
+
+				<section class="section">
+				<div class="container container_right">
+					<div class="section-top">
+
+						<h2 class="site-title">Тарифы</h2>
+						<p
+							class="site-description mb_40"
+						>
+							Все тарифы имеют полный функционал и отличаются только количеством
+							месяцев и выгодой
+						</p>
+					</div>
+
+					<div class="card__wrapper card__wrapper_tarif">
+						<article class="card card_tarif">
 							<h3 class="card__title">1 месяц</h3>
 							<p class="site-description">
 								Тариф подойдёт тем, кто ведёт краткосрочные проекты
@@ -32,15 +304,15 @@
 								<p class="card__text">Ваша выгода</p>
 								<p class="card__cost">1 990 ₽</p>
 							</div>
-							<div class="card__item-wrap">
+							<div class="card__item-wrap mb_40">
 								<p class="card__text">Стоимость месяца</p>
 								<p class="card__cost">1 990 ₽/мес</p>
 							</div>
 
-							<a href="#" class="site-btn">Бесплатно 14 дней</a>
+							<a href="#" class="site-button">Бесплатно 14 дней</a>
 						</article>
 
-						<article class="card card_percent-item">
+						<article class="card card_percent-item card_tarif">
 							<div class="card__percent">
 								Выгода
 								<span>25%</span>
@@ -49,7 +321,7 @@
 							<p class="site-description">
 								Тариф подойдёт для тех, кто уверенно ведёт финансовый учёт
 							</p>
-							<div class="card__item-wrap">
+							<div class="card__item-wrap ">
 								<p class="card__text">Общая стоимость</p>
 								<p class="card__cost">1 490 ₽/мес</p>
 							</div>
@@ -57,42 +329,101 @@
 								<p class="card__text">Ваша выгода</p>
 								<p class="card__cost card__cost_strong-yelow">8 940 ₽</p>
 							</div>
-							<div class="card__item-wrap">
+							<div class="card__item-wrap mb_40">
 								<p class="card__text">Стоимость месяца</p>
 								<p class="card__cost">1 990 ₽/мес</p>
 							</div>
 
-							<a href="#" class="site-btn">Бесплатно 14 дней</a>
+							<a href="#" class="site-button">Бесплатно 14 дней</a>
 						</article>
-						<article class="card card_blue card_percent-item">
+						<article class="card card_blue card_percent-item card_tarif">
 							<div class="card__percent">
 								Выгода
 								<span>50%</span>
 							</div>
-							<h3 class="card__title white-color">12 месяц</h3>
-							<p class="site-description site-description_second-color">
+							<h3 class="card__title site-title_white">12 месяц</h3>
+							<p class="site-description site-description_white">
 								Тариф подойдёт для тех, кто уверенно ведёт финансовый учёт и
 								хочет сэкономить
 							</p>
 
 							<div class="card__item-wrap">
-								<p class="card__text white-color">Общая стоимость</p>
-								<p class="card__cost white-color">11 880 ₽</p>
+								<p class="card__text site-title_white">Общая стоимость</p>
+								<p class="card__cost site-title_white">11 880 ₽</p>
 							</div>
 							<div class="card__item-wrap item_border">
-								<p class="card__text white-color">Ваша выгода</p>
+								<p class="card__text site-title_white">Ваша выгода</p>
 								<p class="card__cost card__cost_strong-yelow">12 000 ₽</p>
 							</div>
-							<div class="card__item-wrap">
-								<p class="card__text white-color">Стоимость месяца</p>
-								<p class="card__cost white-color">990 ₽/мес</p>
+							<div class="card__item-wrap mb_40">
+								<p class="card__text site-title_white">Стоимость месяца</p>
+								<p class="card__cost site-title_white">990 ₽/мес</p>
 							</div>
 
-							<a href="#" class="site-btn site-btn_white">Бесплатно 14 дней</a>
+							<a href="#" class="site-button site-button_white">Бесплатно 14 дней</a>
 						</article>
 					</div>
 				</div>
 			</section>
+
+			<section class="section">
+				<div class="container container_right reverse_padding">
+					<div class="section-top">
+					<h2 class="site-title">Отзывы</h2>
+					</div>
+					<div class="section-wrapper section-wrapper_reverse reviews__section-wrapper border section_blue">
+						<img src="images/reviews/reviews.png" alt="отзывы" class="reviews__img">
+						<div class="reviews__section-content section-content section_blue">
+							<h3 class="reviews__title mb_40">Впервые за долгое время увидела свои расходы и доходы как на ладони.</h3>
+							<div class="reviews__wrapper">
+								<p class="site-description site-title_white reviews__name">Дана Валеева</p>
+								<p class="site-description site-title_white reviews__profession">Продавец Wildberries</p>
+							</div>
+							<a href="#" class="reviews__back"><img src="images/reviews/icons/button-icon.svg" alt="Кнопка назад"></a>
+							<a href="#" class="reviews__forward"><img src="images/reviews/icons/button-icon.svg" alt="Кнопка вперед"></a>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
+
+		<footer class="footer">
+			<div class="container footer__container">
+
+				<div class="footer__wrapper">
+					<div class="footer__group">
+						<a href="" class="footer__logo"><img src="images/footer/finio.svg" alt="Логотип Finio" class="logo-icon"></a>
+						<p class="footer__item footer__item_light">Простой финансовый учёт для <br> продавцов на маркетплейсах</p>
+					</div>
+
+					<div class="footer__group">
+						<p class="footer__item">Возможности</p>
+						<p class="footer__item">Тарифы</p>
+						<p class="footer__item">Отзывы</p>
+						<p class="footer__item">Поддержка клиентов</p>
+					</div>
+					<div class="footer__group">
+						<p class="footer__item">Политика конфиденциальности</p>
+						<p class="footer__item">Пользовательское соглашение</p>
+						<p class="footer__item">Оплата и возврат</p>
+						<p class="footer__item">Договор оферта</p>
+					</div>
+					<div class="footer__group">
+						<p class="footer__item footer__item_light">ИП Ларичев Антон Андреевич </p>
+						<p class="footer__item footer__item_light">ИНН 773373765379</p>
+						<p class="footer__item footer__item_light">ОГРИП 322774600208776 </p>
+						<p class="footer__item footer__item_light">Договор оферта <a href="mailto: alarichev@gmail.com" class="footer__item"> alarichev@gmail.com</a></p>
+						<a href="tel:+79104357592" class="footer__item footer__item_light">Тел.: +7 (910) 435-75-92</a>
+						<address class="footer__item footer__item_light">Москва, Вилиса Лациса 25</address>
+					</div>
+				</div>
+
+				<div class="footer__copyright">
+					<a href="#" class="footer__paymethod"><img src="images/footer/paymethod.svg" alt="Метод оплаты" class="paymethod-icon"></a>
+					<p class="footer__copyr footer__item footer__item_light">© 2022 Finio. Все права защищены.</p>
+				</div>
+
+			</div>
+		</footer>
 	</body>
 </html>
