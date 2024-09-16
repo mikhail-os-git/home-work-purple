@@ -97,6 +97,11 @@ body {
 	color: var(--color-text-white) !important;
 } */
 
+.border {
+	border-bottom: 1px solid rgba(78, 93, 124, 0.08);
+	border-radius: 0 !important;
+}
+
 .site-button {
 	border-radius: 47px;
 	padding: 12px 0;
